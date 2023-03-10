@@ -1,0 +1,16 @@
+class Solution {
+    public int countOdds(int low, int high) {
+        int sum;
+        int answer;
+        sum = high-low;
+        if(high%2==0&&low%2==0)
+        {
+            answer = sum/2;
+        }
+        else
+        {
+            answer = (sum/2)+1;
+        }
+        return answer;
+    }
+}
